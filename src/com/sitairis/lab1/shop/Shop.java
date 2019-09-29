@@ -1,4 +1,4 @@
-package com.sitairis.lab1;
+package com.sitairis.lab1.shop;
 
 public class Shop {
 
