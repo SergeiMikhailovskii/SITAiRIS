@@ -22,4 +22,12 @@ public class AppliancesShop extends Shop {
         this.amountOfTestDevices = amountOfTestDevices;
     }
 
+    public void createSalesForTestDevices(){
+        System.out.println("Created sales for test devices");
+    }
+
+    public void makeSaleForGoldCustomerOnTechnique() {
+        System.out.println("Made sale on technique for a gold customer");
+    }
+
 }
