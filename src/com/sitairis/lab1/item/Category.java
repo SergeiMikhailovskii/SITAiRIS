@@ -10,6 +10,7 @@ public class Category {
         categoryId = 0;
         name = "Category 1";
         description = "Description 1";
+        System.out.println("Category created");
     }
 
     public Category(int categoryId, String name, String description) {

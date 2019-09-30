@@ -1,6 +1,7 @@
 package com.sitairis.lab1;
 
 import com.sitairis.lab1.customers.Customer;
+import com.sitairis.lab1.item.Category;
 import com.sitairis.lab1.item.Item;
 import com.sitairis.lab1.order.Order;
 import com.sitairis.lab1.shop.AppliancesShop;
@@ -18,5 +19,9 @@ public class Main {
 
         System.out.println();
         Order order = new Order(worker, customer, item);
+
+        System.out.println();
+        Category category = new Category();
+        item.setCategory(category);
     }
 }

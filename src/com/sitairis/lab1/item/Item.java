@@ -4,6 +4,7 @@ public class Item {
 
     private int itemId;
     private String name;
+    private Category category;
 
     public Item() {
         itemId = 0;
@@ -32,4 +33,12 @@ public class Item {
         this.name = name;
     }
 
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+        System.out.println("Set category to item");
+    }
 }
