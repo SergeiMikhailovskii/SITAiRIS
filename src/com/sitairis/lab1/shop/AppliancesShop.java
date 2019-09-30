@@ -5,8 +5,8 @@ public class AppliancesShop extends Shop {
     private int amountOfTestDevices;
 
     public AppliancesShop() {
-        super();
         amountOfTestDevices = 0;
+        System.out.println("Appliances shop created!");
     }
 
     public AppliancesShop(String address, String phoneNumber, String name, int amountOfTestDevices) {

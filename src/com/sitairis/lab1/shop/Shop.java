@@ -10,6 +10,7 @@ public class Shop {
         address = "Nezavisimosti avenue";
         phoneNumber = "123-45-67";
         name = "Hit";
+        System.out.println("Shop created");
     }
 
     public Shop(String address, String phoneNumber, String name) {
