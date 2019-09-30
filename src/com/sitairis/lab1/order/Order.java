@@ -10,12 +10,15 @@ public class Order {
     private int workerId;
     private int itemId;
     private String customerName;
+    private Receipt receipt;
 
     public Order(Worker worker, Customer customer, Item item) {
         this.orderId = 0;
         this.workerId = worker.getWorkerId();
         this.itemId = item.getItemId();
         this.customerName = customer.getName();
+        this.receipt = new Receipt();
+        System.out.println("Order created");
     }
 
     public int getOrderId() {
