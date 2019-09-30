@@ -8,7 +8,7 @@ public class Worker {
     private String name;
 
     public Worker() {
-        workerId = 0;
+        workerId = 1;
         experience = 0;
         accessToDb = false;
         name = "Dimas";

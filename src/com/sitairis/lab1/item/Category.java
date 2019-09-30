@@ -7,7 +7,7 @@ public class Category {
     private String description;
 
     public Category() {
-        categoryId = 0;
+        categoryId = 1;
         name = "Category 1";
         description = "Description 1";
     }

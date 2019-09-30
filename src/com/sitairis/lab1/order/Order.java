@@ -1,24 +1,28 @@
 package com.sitairis.lab1.order;
 
+import com.sitairis.lab1.customers.Customer;
+import com.sitairis.lab1.item.Item;
+import com.sitairis.lab1.workers.Worker;
+
 public class Order {
 
     private int orderId;
-    private int workerId;
-    private int itemId;
-    private String customerName;
+    private Worker worker;
+    private Item item;
+    private Customer customer;
 
-    public Order() {
-        orderId = 0;
-        workerId = 0;
-        itemId = 0;
-        customerName = "Customer 1";
-    }
+//    public Order() {
+//        orderId = 1;
+//        worker.workerId = 1;
+//        itemId = 1;
+//        customerId = 1;
+//    }
 
-    public Order(int orderId, int workerId, int itemId, String customerName) {
+    public Order(int orderId, Worker worker, Item item, Customer customer) {
         this.orderId = orderId;
-        this.workerId = workerId;
-        this.itemId = itemId;
-        this.customerName = customerName;
+        this.worker = worker;
+        this.item = item;
+        this.customer = customer;
     }
 
     public int getOrderId() {
@@ -30,27 +34,15 @@ public class Order {
     }
 
     public int getWorkerId() {
-        return workerId;
-    }
-
-    public void setWorkerId(int workerId) {
-        this.workerId = workerId;
+        return this.worker.getWorkerId();
     }
 
     public int getItemId() {
-        return itemId;
+        return this.item.getItemId();
     }
 
-    public void setItemId(int itemId) {
-        this.itemId = itemId;
-    }
-
-    public String getCustomerName() {
-        return customerName;
-    }
-
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
+    public int getCustomerId() {
+        return this.customer.getCustomerId();
     }
 
     public void agreeControlTerms() {
@@ -64,5 +56,6 @@ public class Order {
     public void createOrder() {
         System.out.println("Order created");
     }
+
 
 }
