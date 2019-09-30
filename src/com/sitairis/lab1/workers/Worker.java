@@ -6,6 +6,7 @@ public class Worker {
     private int experience;
     private boolean accessToDb;
     private String name;
+    private WorkerPlace workerPlace;
 
     public Worker() {
         workerId = 0;
@@ -66,4 +67,12 @@ public class Worker {
         System.out.println("Giving profit to bank");
     }
 
+    public WorkerPlace getWorkerPlace() {
+        return workerPlace;
+    }
+
+    public void setWorkerPlace(WorkerPlace workerPlace) {
+        this.workerPlace = workerPlace;
+        System.out.println("Set worker place");
+    }
 }

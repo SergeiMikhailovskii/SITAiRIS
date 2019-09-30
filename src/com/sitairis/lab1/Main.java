@@ -6,6 +6,7 @@ import com.sitairis.lab1.item.Item;
 import com.sitairis.lab1.order.Order;
 import com.sitairis.lab1.shop.AppliancesShop;
 import com.sitairis.lab1.workers.Worker;
+import com.sitairis.lab1.workers.WorkerPlace;
 
 public class Main {
 
@@ -23,5 +24,10 @@ public class Main {
         System.out.println();
         Category category = new Category();
         item.setCategory(category);
+
+        System.out.println();
+        WorkerPlace workerPlace = new WorkerPlace();
+        worker.setWorkerPlace(workerPlace);
     }
+
 }

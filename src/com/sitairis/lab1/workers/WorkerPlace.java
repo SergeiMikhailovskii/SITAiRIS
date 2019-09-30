@@ -10,6 +10,7 @@ public class WorkerPlace {
         placeId = 0;
         roomNumber = 0;
         isNearWindow = false;
+        System.out.println("Worker place created");
     }
 
     public WorkerPlace(int placeId, int roomNumber, boolean isNearWindow) {
