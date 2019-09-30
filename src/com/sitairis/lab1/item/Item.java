@@ -8,6 +8,7 @@ public class Item {
     public Item() {
         itemId = 0;
         name = "Item1";
+        System.out.println("Item created");
     }
 
     public Item(int itemId, String name) {

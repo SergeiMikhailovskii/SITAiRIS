@@ -11,10 +11,12 @@ public class Main {
     public static void main(String[] args) {
         AppliancesShop appliancesShop = new AppliancesShop();
 
+        System.out.println();
         Worker worker = new Worker();
         Customer customer = new Customer();
         Item item = new Item();
 
+        System.out.println();
         Order order = new Order(worker, customer, item);
     }
 }

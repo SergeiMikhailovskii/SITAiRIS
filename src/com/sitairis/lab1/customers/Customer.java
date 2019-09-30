@@ -12,6 +12,7 @@ public class Customer {
         name = "Ivan Ivanov";
         address = "Address 1";
         phoneNumber = "987-65-43";
+        System.out.println("Customer created");
     }
 
     public Customer(int amountOfOrders, String name, String address, String phoneNumber) {

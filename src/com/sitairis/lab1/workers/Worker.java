@@ -12,6 +12,7 @@ public class Worker {
         experience = 0;
         accessToDb = false;
         name = "Dimas";
+        System.out.println("Worker created");
     }
 
     public Worker(int workerId, int experience, boolean accessToDb, String name) {
