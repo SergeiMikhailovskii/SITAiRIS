@@ -1,5 +1,9 @@
 package com.sitairis.lab1.order;
 
+import com.sitairis.lab1.customers.Customer;
+import com.sitairis.lab1.item.Item;
+import com.sitairis.lab1.workers.Worker;
+
 public class Order {
 
     private int orderId;
@@ -7,18 +11,11 @@ public class Order {
     private int itemId;
     private String customerName;
 
-    public Order() {
-        orderId = 0;
-        workerId = 0;
-        itemId = 0;
-        customerName = "Customer 1";
-    }
-
-    public Order(int orderId, int workerId, int itemId, String customerName) {
-        this.orderId = orderId;
-        this.workerId = workerId;
-        this.itemId = itemId;
-        this.customerName = customerName;
+    public Order(Worker worker, Customer customer, Item item) {
+        this.orderId = 0;
+        this.workerId = worker.getWorkerId();
+        this.itemId = item.getItemId();
+        this.customerName = customer.getName();
     }
 
     public int getOrderId() {
