@@ -6,6 +6,7 @@ import com.sitairis.lab1.workers.Worker;
 
 public class Order {
 
+    private static int amountOfOrders = 0;
     private int orderId;
     private int workerId;
     private int itemId;
@@ -13,7 +14,8 @@ public class Order {
     private Receipt receipt;
 
     public Order(Worker worker, Customer customer, Item item) {
-        this.orderId = 0;
+        amountOfOrders++;
+        orderId = amountOfOrders;
         this.workerId = worker.getWorkerId();
         this.itemId = item.getItemId();
         this.customerName = customer.getName();
@@ -25,9 +27,7 @@ public class Order {
         return orderId;
     }
 
-    public void setOrderId(int orderId) {
-        this.orderId = orderId;
-    }
+    public void setOrderId(int orderId) { this.orderId = orderId; }
 
     public int getWorkerId() {
         return workerId;
@@ -51,6 +51,14 @@ public class Order {
 
     public void setCustomerName(String customerName) {
         this.customerName = customerName;
+    }
+
+    public Receipt getReceipt() {
+        return receipt;
+    }
+
+    public void setReceipt(Receipt receipt) {
+        this.receipt = receipt;
     }
 
     public void agreeControlTerms() {
